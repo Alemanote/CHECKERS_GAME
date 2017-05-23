@@ -1,6 +1,6 @@
 # Checkers Game
 
-# Game & Rules
+## Game & Rules
 
 _British people call the game "draughts". The American name is American checkers. English draughts is played on an 8x8 checkerboard. Only the dark squares are used: the light squares are never used._
 
