@@ -1,0 +1,12 @@
+body {
+  color: white;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.game-title {
+  text-align: center;
+  width: 602px;
+}  

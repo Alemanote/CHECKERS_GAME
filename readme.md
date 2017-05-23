@@ -1,4 +1,4 @@
-# Checkers Game
+# Ironcheckers
 
 ## Game & Rules
 
@@ -16,6 +16,6 @@ _All the single pieces (the starting pieces) can only move diagonally forward. T
 - **King**
  _If a player's piece moves into back rank (the King Row) on the other player's side, it becomes a king. It can move forwards and backwards. A king cannot move out of the King Row until the next turn. In English draughts, a king's only advantage over a man is the ability to move and capture backwards as well as forwards. In international draughts, flying kings can move to squares diagonally at any distance. Flying kings are not used in English draughts, as a king's ability is to move forwards as well as backwards._
 
-- **How the game ends.**
+- **How the game ends**
  _The first player to lose all of his or her pieces loses the game. If a player is put in a position where they cannot move, they lose.[3] If the players have the same amount of pieces, the player with the most kings wins. If the players have an equal number of pieces and the same number of kings the game is a draw._
 

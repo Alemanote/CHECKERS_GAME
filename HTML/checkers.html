@@ -1,104 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="CSS/checkers.css">
+    <script type="text/javascript" src="JS_JQUERY/checkers.js"></script>
+    <script type="text/javascript" src="JS_JQUERY/p1.js"></script>
+    <script type="text/javascript" src="JS_JQUERY/p2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Ironcheckers</title>
 </head>
-<body>
+
+<body class="container">
 
     <!--Game's Title-->
-    <h1>Checkers Game</h1> 
+    <h1 class="game-title">IronCheckers</h1>
     <!--Players Scores-->
-    <div class ="players">
+    <div class="players">
         <div class="P1 SCORE"></div>
         <div class="P2 SCORE"></div>
     </div>
     <!--Checker's board-->
-    <div class = "game-board">
-        <div class="row one"></div>
-            <div class = "col a"></div>
-            <div class = "col b"></div>
-            <div class = "col c"></div>
-            <div class = "col d"></div>
-            <div class = "col e"></div>
-            <div class = "col f"></div>
-            <div class = "col g"></div>
-            <div class = "col h"></div>
-        <div class="row two">
-            <div class = "col a"></div>
-            <div class = "col b"></div>
-            <div class = "col c"></div>
-            <div class = "col d"></div>
-            <div class = "col e"></div>
-            <div class = "col f"></div>
-            <div class = "col g"></div>
-            <div class = "col h"></div>
+    <div class="game-board">
+        <div class="row 1"></div>
+        <div class="col 1"></div>
+        <div class="col 2"></div>
+        <div class="col 3"></div>
+        <div class="col 4"></div>
+        <div class="col 5"></div>
+        <div class="col 6"></div>
+        <div class="col 7"></div>
+        <div class="col 8"></div>
+        <div class="row 2">
+            <div class="col 1"></div>
+            <div class="col 2"></div>
+            <div class="col 3"></div>
+            <div class="col 4"></div>
+            <div class="col 5"></div>
+            <div class="col 6"></div>
+            <div class="col 7"></div>
+            <div class="col 8"></div>
         </div>
-        <div class="row three">
-            <div class = "col a"></div>
-            <div class = "col b"></div>
-            <div class = "col c"></div>
-            <div class = "col d"></div>
-            <div class = "col e"></div>
-            <div class = "col f"></div>
-            <div class = "col g"></div>
-            <div class = "col h"></div>
+        <div class="row 3">
+            <div class="col 1"></div>
+            <div class="col 2"></div>
+            <div class="col 3"></div>
+            <div class="col 4"></div>
+            <div class="col 5"></div>
+            <div class="col 6"></div>
+            <div class="col 7"></div>
+            <div class="col 8"></div>
         </div>
-        <div class="row four">
-            <div class = "col a"></div>
-            <div class = "col b"></div>
-            <div class = "col c"></div>
-            <div class = "col d"></div>
-            <div class = "col e"></div>
-            <div class = "col f"></div>
-            <div class = "col g"></div>
-            <div class = "col h"></div>
+        <div class="row 4">
+            <div class="col 1"></div>
+            <div class="col 2"></div>
+            <div class="col 3"></div>
+            <div class="col 4"></div>
+            <div class="col 5"></div>
+            <div class="col 6"></div>
+            <div class="col 7"></div>
+            <div class="col 8"></div>
         </div>
-        <div class="row five">
-            <div class = "col a"></div>
-            <div class = "col b"></div>
-            <div class = "col c"></div>
-            <div class = "col d"></div>
-            <div class = "col e"></div>
-            <div class = "col f"></div>
-            <div class = "col g"></div>
-            <div class = "col h"></div>
+        <div class="row 5">
+            <div class="col 1"></div>
+            <div class="col 2"></div>
+            <div class="col 3"></div>
+            <div class="col 4"></div>
+            <div class="col 5"></div>
+            <div class="col 6"></div>
+            <div class="col 7"></div>
+            <div class="col 8"></div>
         </div>
-        <div class="row six">
-            <div class = "col a"></div>
-            <div class = "col b"></div>
-            <div class = "col c"></div>
-            <div class = "col d"></div>
-            <div class = "col e"></div>
-            <div class = "col f"></div>
-            <div class = "col g"></div>
-            <div class = "col h"></div>
+        <div class="row 6">
+            <div class="col 1"></div>
+            <div class="col 2"></div>
+            <div class="col 3"></div>
+            <div class="col 4"></div>
+            <div class="col 5"></div>
+            <div class="col 6"></div>
+            <div class="col 7"></div>
+            <div class="col 8"></div>
         </div>
-        <div class="row seven">
-            <div class = "col a"></div>
-            <div class = "col b"></div>
-            <div class = "col c"></div>
-            <div class = "col d"></div>
-            <div class = "col e"></div>
-            <div class = "col f"></div>
-            <div class = "col g"></div>
-            <div class = "col h"></div>
+        <div class="row 7">
+            <div class="col 1"></div>
+            <div class="col 2"></div>
+            <div class="col 3"></div>
+            <div class="col 4"></div>
+            <div class="col 5"></div>
+            <div class="col 6"></div>
+            <div class="col 7"></div>
+            <div class="col 8"></div>
         </div>
-        <div class="row eight">
-            <div class = "col a"></div>
-            <div class = "col b"></div>
-            <div class = "col c"></div>
-            <div class = "col d"></div>
-            <div class = "col e"></div>
-            <div class = "col f"></div>
-            <div class = "col g"></div>
-            <div class = "col h"></div>
+        <div class="row 8">
+            <div class="col 1"></div>
+            <div class="col 2"></div>
+            <div class="col 3"></div>
+            <div class="col 4"></div>
+            <div class="col 5"></div>
+            <div class="col 6"></div>
+            <div class="col 7"></div>
+            <div class="col 8"></div>
         </div>
-        
     </div>
 
-
 </body>
+
 </html>
