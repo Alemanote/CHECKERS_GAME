@@ -18,7 +18,15 @@ this.score= 0;
 
 };
 
-checkers_game.prototype.getAvailablePositions = function() {};
+checkers_game.prototype.moveLeft =  function () {
+
+
+
+
+
+}
+
+
 
 // checkers_game.prototype._gameFinished = function(){
 //   if (this.won === true || this.lost === true){

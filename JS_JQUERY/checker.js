@@ -1,13 +1,8 @@
 //Defining the pieces: regular pieces and kings
-var Piece = function () {};
+var Piece = function () {
+    this.player;
+    this.king = false;
 
 
-var commonPieces = function () {
-    this.move = false;
-    this.selected = false;
-}
-var kingPieces = function () {
-    this.status =  false;
-    this.superMove = false;
-    this.selected = false;
-}
+};
+

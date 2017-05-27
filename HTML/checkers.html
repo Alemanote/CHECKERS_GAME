@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="CSS/checkers.css">
-    <script type="text/javascript" src="JS_JQUERY/checkers.js"></script>
+    <link rel="stylesheet" type="text/css" href="checkers.css">
+    <script type="text/javascript" src="JS_JQUERY/checker.js"></script>
     <script type="text/javascript" src="JS_JQUERY/p1.js"></script>
     <script type="text/javascript" src="JS_JQUERY/p2.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -20,92 +20,128 @@
     <h1 class="game-title">IronCheckers</h1>
     <!--Players Scores-->
     <div class="players">
-        <div class="P1 SCORE"></div>
-        <div class="P2 SCORE"></div>
+        <div class="P1 SCORE col-xs-6">P1 Score:  <input> </div>
+            
+        <div class="P2 SCORE col-xs-6">P2 Score:  <input> </div>
+         
     </div>
     <!--Checker's board-->
-    <div class="game-board">
-        <div class="row 1"></div>
-        <div class="col 1"></div>
-        <div class="col 2"></div>
-        <div class="col 3"></div>
-        <div class="col 4"></div>
-        <div class="col 5"></div>
-        <div class="col 6"></div>
-        <div class="col 7"></div>
-        <div class="col 8"></div>
-        <div class="row 2">
-            <div class="col 1"></div>
-            <div class="col 2"></div>
-            <div class="col 3"></div>
-            <div class="col 4"></div>
-            <div class="col 5"></div>
-            <div class="col 6"></div>
-            <div class="col 7"></div>
-            <div class="col 8"></div>
+    <div class="col-xs-12 game-board">
+        <div class="col-xs-10 row 1">
+            <div class="col-xs-2 1"></div>
+            <div class="col-xs-2 2"></div>
+            <div class="col-xs-2 3"></div>
+            <div class="col-xs-2 4"></div>
+            <div class="col-xs-2 5"></div>
+            <div class="col-xs-2 6"></div>
+            <div class="col-xs-2 7"></div>
+            <div class="col-xs-2 8"></div>
         </div>
-        <div class="row 3">
-            <div class="col 1"></div>
-            <div class="col 2"></div>
-            <div class="col 3"></div>
-            <div class="col 4"></div>
-            <div class="col 5"></div>
-            <div class="col 6"></div>
-            <div class="col 7"></div>
-            <div class="col 8"></div>
+       
+        <div class="col-xs-10 row 2">
+            <div class="col-xs-2 1"></div>
+            <div class="col-xs-2 2"></div>
+            <div class="col-xs-2 3"></div>
+            <div class="col-xs-2 4"></div>
+            <div class="col-xs-2 5"></div>
+            <div class="col-xs-2 6"></div>
+            <div class="col-xs-2 7"></div>
+            <div class="col-xs-2 8"></div>
         </div>
-        <div class="row 4">
-            <div class="col 1"></div>
-            <div class="col 2"></div>
-            <div class="col 3"></div>
-            <div class="col 4"></div>
-            <div class="col 5"></div>
-            <div class="col 6"></div>
-            <div class="col 7"></div>
-            <div class="col 8"></div>
+        <div class="col-xs-10 row 3">
+            <div class="col-xs-2 1"></div>
+            <div class="col-xs-2 2"></div>
+            <div class="col-xs-2 3"></div>
+            <div class="col-xs-2 4"></div>
+            <div class="col-xs-2 5"></div>
+            <div class="col-xs-2 6"></div>
+            <div class="col-xs-2 7"></div>
+            <div class="col-xs-2 8"></div>
         </div>
-        <div class="row 5">
-            <div class="col 1"></div>
-            <div class="col 2"></div>
-            <div class="col 3"></div>
-            <div class="col 4"></div>
-            <div class="col 5"></div>
-            <div class="col 6"></div>
-            <div class="col 7"></div>
-            <div class="col 8"></div>
+        <div class="col-xs-10 row 4">
+            <div class="col-xs-2 1"></div>
+            <div class="col-xs-2 2"></div>
+            <div class="col-xs-2 3"></div>
+            <div class="col-xs-2 4"></div>
+            <div class="col-xs-2 5"></div>
+            <div class="col-xs-2 6"></div>
+            <div class="col-xs-2 7"></div>
+            <div class="col-xs-2 8"></div>
         </div>
-        <div class="row 6">
-            <div class="col 1"></div>
-            <div class="col 2"></div>
-            <div class="col 3"></div>
-            <div class="col 4"></div>
-            <div class="col 5"></div>
-            <div class="col 6"></div>
-            <div class="col 7"></div>
-            <div class="col 8"></div>
+        <div class="col-xs-10 row 5">
+            <div class="col-xs-2 1"></div>
+            <div class="col-xs-2 2"></div>
+            <div class="col-xs-2 3"></div>
+            <div class="col-xs-2 4"></div>
+            <div class="col-xs-2 5"></div>
+            <div class="col-xs-2 6"></div>
+            <div class="col-xs-2 7"></div>
+            <div class="col-xs-2 8"></div>
         </div>
-        <div class="row 7">
-            <div class="col 1"></div>
-            <div class="col 2"></div>
-            <div class="col 3"></div>
-            <div class="col 4"></div>
-            <div class="col 5"></div>
-            <div class="col 6"></div>
-            <div class="col 7"></div>
-            <div class="col 8"></div>
+        <div class="col-xs-10 row 6">
+            <div class="col-xs-2 1"></div>
+            <div class="col-xs-2 2"></div>
+            <div class="col-xs-2 3"></div>
+            <div class="col-xs-2 4"></div>
+            <div class="col-xs-2 5"></div>
+            <div class="col-xs-2 6"></div>
+            <div class="col-xs-2 7"></div>
+            <div class="col-xs-2 8"></div>
         </div>
-        <div class="row 8">
-            <div class="col 1"></div>
-            <div class="col 2"></div>
-            <div class="col 3"></div>
-            <div class="col 4"></div>
-            <div class="col 5"></div>
-            <div class="col 6"></div>
-            <div class="col 7"></div>
-            <div class="col 8"></div>
+        <div class="col-xs-10  row 7">
+            <div class="col-xs-2 1"></div>
+            <div class="col-xs-2 2"></div>
+            <div class="col-xs-2 3"></div>
+            <div class="col-xs-2 4"></div>
+            <div class="col-xs-2 5"></div>
+            <div class="col-xs-2 6"></div>
+            <div class="col-xs-2 7"></div>
+            <div class="col-xs-2 8"></div>
+        </div>
+        <div class="col-xs-10 row 8">
+           <div class="col-xs-2 1"></div>
+            <div class="col-xs-2 2"></div>
+            <div class="col-xs-2 3"></div>
+            <div class="col-xs-2 4"></div>
+            <div class="col-xs-2 5"></div>
+            <div class="col-xs-2 6"></div>
+            <div class="col-xs-2 7"></div>
+            <div class="col-xs-2 8"></div>
         </div>
     </div>
+    <!--Div's for the pieces-->
+    <div class="pieces">
+        <div class="black">
+            <div id="b1"></div>
+            <div id="b2"></div>
+            <div id="b3"></div>
+            <div id="b4"></div>
+            <div id="b5"></div>
+            <div id="b6"></div>
+            <div id="b7"></div>
+            <div id="b8"></div>
+            <div id="b9"></div>
+            <div id="b10"></div>
+            <div id="b11"></div>
+            <div id="b12"></div>
 
+        </div>
+         
+        <div class="white">
+            <div id="w1"></div>
+            <div id="w2"></div>
+            <div id="w3"></div>
+            <div id="w4"></div>
+            <div id="w5"></div>
+            <div id="w6"></div>
+            <div id="w7"></div>
+            <div id="w8"></div>
+            <div id="w9"></div>
+            <div id="w10"></div>
+            <div id="w11"></div>
+            <div id="w12"></div>
+        </div>
+    </div>
 </body>
 
 </html>
