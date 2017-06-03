@@ -234,7 +234,7 @@ for (var i = 0; i < 8; i += 2) {
     dibujaCirculo(i + 1, 1); //fila 2
 }
 for (var i = 0; i < 8; i += 2) {
-    dibujaCirculo(i, 2); //fila 4
+    dibujaCirculo(i, 2); //fila 3
 }
 
 for (var i = 0; i < 8; i += 2) {
@@ -280,7 +280,10 @@ var escogida = false;
 escogidaxt = -100;
 escogidayt = -100;
 
+
+
 function posicion(event) {
+
     var x = event.x; //recogemos la coordenada x
     var y = event.y; //recogemos la coordenada y
     x -= canvas.offsetLeft; //ajustamos la poscion del margen izquierdo
@@ -321,8 +324,29 @@ function posicion(event) {
 
     }
 
-    if (Math.abs(xt - escogidaxt) < 2 && Math.abs(yt - escogidayt) < 2) {
-        
+//Chequeando movimientos
+
+    var move = 1;
+
+    if (tablero[escogidaxt + escogidayt * 8] == 1) {
+        if (tablero[(escogidaxt + 1) + (escogidayt + 1) * 8] == 2 && tablero[(escogidaxt + 2) + (escogidayt + 2) * 8] == 0) { move = 2; }
+        if (tablero[(escogidaxt + 1) + (escogidayt - 1) * 8] == 2 && tablero[(escogidaxt + 2) + (escogidayt - 2) * 8] == 0) { move = 2; }
+        if (tablero[(escogidaxt - 1) + (escogidayt + 1) * 8] == 2 && tablero[(escogidaxt - 2) + (escogidayt + 2) * 8] == 0) { move = 2; }
+        if (tablero[(escogidaxt - 1) + (escogidayt - 1) * 8] == 2 && tablero[(escogidaxt - 2) + (escogidayt - 2) * 8] == 0) { move = 2; }
+    }
+
+    if (tablero[escogidaxt + escogidayt * 8] == 2) {
+        if (tablero[(escogidaxt + 1) + (escogidayt + 1) * 8] == 1 && tablero[(escogidaxt + 2) + (escogidayt + 2) * 8] == 0) { move = 2; }
+        if (tablero[(escogidaxt + 1) + (escogidayt - 1) * 8] == 1 && tablero[(escogidaxt + 2) + (escogidayt - 2) * 8] == 0) { move = 2; }
+        if (tablero[(escogidaxt - 1) + (escogidayt + 1) * 8] == 1 && tablero[(escogidaxt - 2) + (escogidayt + 2) * 8] == 0) { move = 2; }
+        if (tablero[(escogidaxt - 1) + (escogidayt - 1) * 8] == 1 && tablero[(escogidaxt - 2) + (escogidayt - 2) * 8] == 0) { move = 2; }
+    }
+
+
+    //Limitar el movimiento a una 
+
+    if (Math.abs(xt - escogidaxt) <= move && Math.abs(yt - escogidayt) <= move) {
+
         if (escogida && tablero[xt + yt * 8] == 0) {
 
             if (tablero[escogidaxt + escogidayt * 8] == 1) {
@@ -344,17 +368,9 @@ function posicion(event) {
 
             superficie.closePath();
             tablero[escogidaxt + escogidayt * 8] = 0;
-
             escogida = false;
         }
-
-
-
-
-
     }
-
-
 
 
 }
