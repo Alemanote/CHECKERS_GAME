@@ -1,0 +1,125 @@
+/*body {
+  
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.game-title {
+  text-align: center;
+  width: 330px;
+  font-size: 22px;
+  color: brown;
+}  
+
+.players {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 320px;
+  height: 30px;
+  
+}
+
+.P1, .P2 {
+  margin: 3px;
+  color: brown;
+}
+
+input {
+  width:40px;
+
+}
+
+canvas {
+  border: 2px solid brown;
+  margin: 10px;
+}*/
+
+
+/*NEW DISPLAY*/
+
+canvas {
+  border: 2px solid brown;
+  margin: 10px;
+}
+
+body {
+  
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  margin: 10px;
+  padding: 0;
+}
+
+.game-title{
+  text-align: center;
+  width: 330px;
+  font-size: 22px;
+  color: brown;
+}  
+
+/*Game Board*/
+
+#game-board {
+  border: 2px solid brown;
+  width: 320px;
+  height: 320px;
+  margin: 10px;
+  position: absolute;
+}
+
+.row {
+  /*display:block;*/
+  width: 345px;
+}
+
+.blackSQ, .whiteSQ {
+	width:40px;
+	height:40px;
+
+	float:left;
+}
+
+.blackSQ {
+	background-color:#000000;
+}
+
+.whiteSQ  {
+	background-color:#FFFFFF;
+}
+
+
+/*Game Pieces*/
+
+#pieces-container {
+  width: 322px;
+  height: 322px;
+  margin: 12px;
+  position: absolute;
+  
+}
+
+.noPiece, .redPiece, .greenPiece {
+  width:40px;
+	height:40px;
+  border-radius: 100%;
+	float:left;
+  
+}
+
+.noPiece {
+  background-color:#FFFFFF;
+  opacity: 0;
+
+  
+}
+.redPiece {background-color:brown}
+.greenPiece {background-color: green}
+
+
+
+
+
+
+
